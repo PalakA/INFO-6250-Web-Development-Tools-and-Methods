@@ -1,0 +1,44 @@
+<web-app>
+	<!-- Request Headers Name-->
+	<servlet>
+		<servlet-name>headers</servlet-name>
+		<servlet-class>Headers</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>headers</servlet-name>
+		<url-pattern>/headers.html</url-pattern>
+	</servlet-mapping>
+	<!-- Request one particular Header-->
+	<servlet>
+		<servlet-name>header</servlet-name>
+		<servlet-class>Header</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>header</servlet-name>
+		<url-pattern>/header.html</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Request all the getX() methods from the HttpServletRequest-->
+	<servlet>
+		<servlet-name>httpServletRequestGetX</servlet-name>
+		<servlet-class>HttpServletRequestGetX</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>httpServletRequestGetX</servlet-name>
+		<url-pattern>/httpServletRequestGetX.html</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Request all the inherited getX() methods from the super interface ServletRequest-->
+	<servlet>
+		<servlet-name>interfaceServletRequest</servlet-name>
+		<servlet-class>InterfaceServletRequest</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>interfaceServletRequest</servlet-name>
+		<url-pattern>/interfaceServletRequest.html</url-pattern>
+	</servlet-mapping>
+</web-app>
