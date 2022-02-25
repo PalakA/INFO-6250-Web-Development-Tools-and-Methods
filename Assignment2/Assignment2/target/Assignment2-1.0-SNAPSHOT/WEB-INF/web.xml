@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>XlsDriver</servlet-name>
+        <servlet-class>com.mycompany.assignment2.XlsDriver</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>tuition</servlet-name>
+        <servlet-class>Part6Servlet</servlet-class>
+    </servlet>
+    <security-constraint>
+      <web-resource-collection>
+         <web-resource-name>HW2Part7</web-resource-name>
+         <url-pattern>/</url-pattern>
+         <http-method>GET</http-method>
+      </web-resource-collection>
+
+      <auth-constraint>
+         <role-name>tomcat</role-name>
+         <role-name>role1</role-name>
+      </auth-constraint>
+   </security-constraint>
+   
+   <security-role>
+      <role-name>tomcat</role-name>
+      <role-name>role1</role-name>
+   </security-role>
+   
+   <login-config>
+      <auth-method>BASIC</auth-method>
+      <realm-name>Authorized Users Only</realm-name>
+   </login-config>
+   
+    <servlet-mapping>
+        <servlet-name>XlsDriver</servlet-name>
+        <url-pattern>/XlsDriver.csv</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>tuition</servlet-name>
+        <url-pattern>/tuition</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

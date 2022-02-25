@@ -1,0 +1,29 @@
+.container {
+    margin-left: 3%;
+    margin-right: 3%;
+    border: 2px solid chocolate;
+}
+
+form {
+    padding: 10px;
+}
+
+h2 {
+    text-align: right;
+}
+
+h3 {
+    color: red;
+}
+
+.disclaimer {
+    margin: 3%;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.back {
+    background: gray;
+    margin: 2%;
+    padding: 15px;
+}

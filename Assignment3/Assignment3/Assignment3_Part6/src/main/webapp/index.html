@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie Store</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Welcome to our Movie Store</h1>
+        <p> Please make your selection below:</p>
+        <form action="movie" method="post">
+            <input type="hidden" name="action" value="select"/>
+            <select name="selection">
+                <option value="browse">Browse Movie</option>
+                <option value="add">Add New Movies to Database</option>
+            </select>
+            <button type="submit" value="submit">Send</button>
+        </form>
+    </body>
+</html>

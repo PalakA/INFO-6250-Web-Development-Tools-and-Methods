@@ -1,0 +1,108 @@
+
+.logo {
+  float: left;
+  width: 250px;
+  height: 80px;
+}
+
+.tr-info {
+  border: 3px solid black;
+  padding: 10px;
+}
+
+.table-1 {
+  width: 100%;
+  border-spacing: 10px;
+  padding: 20px;
+}
+
+th{
+  color: red;
+  text-align: left;
+  font-size: 20px;
+}
+
+.th-1{
+  color: blue;
+  text-align: left;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.tr-info-1 {
+  padding: 10px;
+  background-color:#eee;
+  color: #00008B;
+}
+
+.td-term{
+	font-style: italic;
+}
+
+.nestedTable {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.nestedTable th{
+  text-align: center;
+  font-size: 15px;
+  color: black;
+  border: 1px solid black;
+  background-color: #eee;
+}
+
+.nestedTable td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 12px 15px;
+}
+
+.section4-info{
+	padding: 10px;
+	font-style: italic;
+	font-size: 15px;
+}
+
+.HRNavigatorlogo {
+  float: right;
+  width: 250px;
+  height: 50px;
+}
+
+.button-1 {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+}
+
+.button-1:hover {
+  background-color: #f7fafa;
+}
+
+.button-1:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
+}
