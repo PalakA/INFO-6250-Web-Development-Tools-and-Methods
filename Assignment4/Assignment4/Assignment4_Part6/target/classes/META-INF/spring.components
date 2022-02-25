@@ -1,0 +1,2 @@
+com.mvc.controller.ProductController=org.springframework.stereotype.Component
+com.mvc.controller.ShoppingController=org.springframework.stereotype.Component
